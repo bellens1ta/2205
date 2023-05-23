@@ -4,7 +4,7 @@ const app = express()
 const { vehiculosRoute } = require('./routes/vehiculos.route')
 const { reservaRoute } = require('./routes/reserva.route')
 
-const PORT = process.env.PORT || 3001
+const PORT = process.env.PORT || 3002
 
 
 app.use(express.json())
