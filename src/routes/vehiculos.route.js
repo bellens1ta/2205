@@ -5,8 +5,6 @@ const {vehiculosController} = require ('../controllers/vehiculos.controller')
 const router = express.Router()
 
 
-router.get('/vehiculos', ( req, res)=> {
-    res.status(200).json({mensaje: "funciona la ruta de vehiculos"})
-})
+router.get('/vehiculos', vehiculosController) // recupera el array de vehiculos
 
 module.exports = {vehiculosRoute : router}
